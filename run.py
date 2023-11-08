@@ -30,3 +30,13 @@ monthly_savings_percentage (float): The monthly savings percentage as a percenta
 
 Returns: int: The number of years required to achieve the financial goal.
 """
+years = 0
+annual_interest_rate /= 100
+monthly_savings_percentage /= 100
+
+while initial_savings < traget_goal:
+    initial_saving += (monthly_savings + ( intitial_savings * monthly_savings_procentage))
+    initial_savings *= (1 + annual_interest_rate)
+    years += 1
+
+return years
