@@ -40,3 +40,18 @@ while initial_savings < traget_goal:
     years += 1
 
 return years
+
+
+def calculate_required_monthly_savings(initial_savings_two, target_goal_two, years_to_goal):
+    """
+    Calculate the monthly savings that are required to reach the financial goal in a specific number of years.
+
+    Args: 
+    initial_savings_two (float): The initial savings amount in euros.
+    target_goal (float): The target savings goal in euros.
+    years_to_goal (int): The number of years it talkes to reach the financial goal.
+
+    Returns:
+    float: The required monthly savings amount in euros.
+    """
+    return (target_goal_two - initial_savings_two) / (years_to_goal * 12)
